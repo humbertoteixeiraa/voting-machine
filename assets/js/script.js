@@ -6,36 +6,23 @@ const form = document.querySelector('#form-habits') //querySelector é uma FUNÇ
 //Essa BIBLIOTECA precisa do FORMULÁRIO form para funcionar.
 const nlwSetup = new NLWSetup(form)
 
-
-
-/* 
-
-//Criando OBJETO data.
-//A forma de organização dos dados do objeto segue as orientações da BIBLIOTECA criada pela ROCKETSEAT para o desafio.
-const data = {
-    run: ['01-01', '01-02', '01-06', '01-07', '01-08'], //ARRAY
-    water: ['01-04', '01-05'], //ARRAY
-    food: ['01-01', '01-03'], //ARRAY
-    journal: ['01-02'],
-    takePills: ['01-03']
-}
-
-//FUNÇÃO .setData é usada para passar os dados dp objeto data para dentro do objeto nlwSetup
-nlwSetup.setData(data)
-
-//FUNÇÂO .load para fazer o carregamento
-nlwSetup.load()
-
-*/
-
-
-//Inportando a TAG button, do index.html, para dentro da VARIÁVEL button
+//Importando a TAG button, do index.html, para dentro da VARIÁVEL button
 const button = document.querySelector('header button')
+
+//Adicionando uma FUNÇÃO que vai ficar "ouvindo" o evento de click.
+//Sempre que houver o evento de click, a função add será acionada.
+button.addEventListener('click', add)
+
+//Adicionando uma FUNÇÃO que salvará qualquer alteração no form
+form.addEventListener("change", save)
+
+
+
 
 
 //CONCEITO DE FUNÇÃO: serve para agrupar códigos que poderá ser usado sempre que for necessário.
 function add() {
-    const today = "01/01"
+    const today = new Date().toLocaleDateString('pt-br').slice(0,-5)
     const dayExists = nlwSetup.dayExists(today) //A função dayExists faz parte da BIBLIOTECA criada pela ROCKETSEAT para o desafio.
 
     if (dayExists) {
@@ -47,14 +34,24 @@ function add() {
         return
     }
 
-    
-
     //ENTENDENDO A FUNÇÃO add:
     //01 - Ao clicar no botão, a função adicionará uma data na VARIÁVEL today;
     //02 - Em seguida será verificado se o dia adicionado já existe. Se existir, a CONSTANTE dayExists receberá o valor TRUE, se não, FALSE;
     //03 - Logo após cairá na condicional que dará alertas diferentes para os valores TRUE ou FALSE.
 }
 
-//Adicionando uma FUNÇÃO que vai ficar "ouvindo" o evento de click.
-//Sempre que houver o evento de click, a função add será acionada.
-button.addEventListener('click', add)
+function save() {
+    localStorage.setItem('NLWSetup@habits', JSON.stringify(nlwSetup.data))
+
+    //ENTENDENDO A FUNÇÃO save:
+    //01 - Será executada sempre que houver uma alteração no form;
+    //02 - Salvará em localStorage, na chave 'NLWSetup@habits', os dados alterados já transformados em STRING.
+}
+
+
+
+
+//Salvando na constante data as informações que estão em localStorage já em forma de OBJETO
+const data = JSON.parse(localStorage.getItem("NLWSetup@habits",)) || {}
+nlwSetup.setData(data)
+nlwSetup.load()
