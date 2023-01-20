@@ -16,6 +16,8 @@
     justify-content: space-between;
 
     padding: 48px;
+
+    position: fixed;
   }
 
   button {
@@ -39,7 +41,8 @@
   #form-habits {
     display: flex;
 
-    padding: 0 48px;
+    padding: 182px 48px 48px;
+    width: fit-content;
   }
 
   .habits {
@@ -102,4 +105,14 @@
   input:checked {
     background: #8b5cf6;
     border: 2px solid #a78bfa;
+  }
+
+
+  /*
+  RESPONSIVIDADE
+  */
+  @media (max-width: 570px) {
+    button div {
+      display: none;
+    }
   }
