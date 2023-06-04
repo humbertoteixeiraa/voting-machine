@@ -1,2 +1,2 @@
-# habits
- Aplicativo web para controle de hábitos criado na TRILHA EXPLORER durante o NLW-SETUP da Rocketseat realizado em janeiro de 2023.
+# urna-eletronica
+ Projeto de uma Urna Eletrônica criado durante o curso de Javascript da B7Web.
