@@ -28,6 +28,20 @@ body {
     background: linear-gradient(to right, #e8e8e8, #c1c1c1);
     margin-left: 30px;
     border-radius: 5px;   
+
+    display: flex;
+    flex-direction: column;
+}
+
+.d-1 {
+    flex: 1;
+}
+
+.d-2 {
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px solid #000;
+    padding-left: 10px;
 }
 
 .teclado {
