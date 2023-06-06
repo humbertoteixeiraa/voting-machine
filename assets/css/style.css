@@ -1,4 +1,6 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
+
     margin: 0;
 
     display: flex;
@@ -17,8 +19,32 @@ body {
     width: 500px;
     height: 320px;
     background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    margin-left: 30px;
 }
 
 .teclado {
     background-color: #403a3a;
+    margin-left: 30px;
+}
+
+.teclado--linha {
+    display: flex;
+    justify-content: center;
+}
+
+.teclado--botao {
+    width: 70px;
+    height: 40px;
+    margin: 10px;
+
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    box-shadow: 3px 3px 3px #555;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
 }
