@@ -81,6 +81,12 @@ body {
     border: 1px solid #000;
 }
 
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+}
+
 .d-1-4 {
     flex: 1;
 
@@ -162,5 +168,7 @@ body {
 }
 
 @keyframes pisca {
-    
+    0% { opacity: 0;}
+    50% { opacity: 1;}
+    100% { opacity: 0;}
 }
