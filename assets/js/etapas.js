@@ -21,6 +21,7 @@ let etapas = [
             },
         ]
     },
+
     {
         titulo: 'PREFEITO',
         numeros: 2,
@@ -47,4 +48,5 @@ let etapas = [
             },
         ]
     }
+    
 ];

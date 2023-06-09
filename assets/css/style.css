@@ -51,8 +51,6 @@ body {
 
     display: flex;
     align-items: center;
-    
-    background-color: red;
 }
 
 .d-1-2 {
@@ -61,14 +59,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    background-color: yellow;
 }
 
 .d-1-3 {
     height: 50px;
-    
-    background-color: yellowgreen;
 }
 
 .numero {
@@ -91,8 +85,6 @@ body {
     flex: 1;
 
     line-height: 30px;
-    
-    background-color: orange;
 }
 
 .d-1-right {
