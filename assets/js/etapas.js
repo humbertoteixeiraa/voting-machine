@@ -4,17 +4,17 @@ let etapas = [
         numeros: 5,
         candidatos: [
             {
-                numero: '38111',
-                nome: 'Fulano de Tal',
-                partido: 'ABC',
+                numero: '13123',
+                nome: 'Francisco Alberto',
+                partido: 'PT',
                 fotos:[
                     {url:'38111.jpg', legenda: 'Vereador'}
                 ]
             },
             {
-                numero: '77222',
-                nome: 'Beltrano da Silva',
-                partido: 'DEFG',
+                numero: '17123',
+                nome: 'Fábio Júnior',
+                partido: 'PL',
                 fotos:[
                     {url:'77222.jpg', legenda: 'Vereador'}
                 ]
@@ -27,20 +27,20 @@ let etapas = [
         numeros: 2,
         candidatos: [
             {
-                numero: '99',
-                nome: 'Ciclano',
-                partido: 'ABC',
-                vice: 'Cic',
+                numero: '13',
+                nome: 'Felipe Pinheiro',
+                partido: 'PT',
+                vice: 'Dra. Jocélia',
                 fotos:[
                     {url:'99.jpg', legenda: 'Prefeito'},
                     {url:'99_2.jpg', legenda: 'Vice-Prefeito', small: true}
                 ]
             },
             {
-                numero: '84',
-                nome: 'Zulano',
-                partido: 'QWERTY',
-                vice: 'Zul',
+                numero: '45',
+                nome: 'João Barroso',
+                partido: 'PSDB',
+                vice: 'Edísio Pacheco',
                 fotos:[
                     {url:'84.jpg', legenda: 'Prefeito'},
                     {url:'84_2.jpg', legenda: 'Vice-Prefeito', small: true}
