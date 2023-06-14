@@ -6,8 +6,20 @@ let aviso = document.querySelector('.d-2');
 let lateral = document.querySelector('.d-1-right');
 let numeros = document.querySelector('.numero');
 
+//
+let etapaAtual = 0;
+
 //FUNCTIONS
 function comecarEtapa() {
+    let etapa = etapas[etapaAtual];
+    let numeroHtml = '';
+
+    seuVotoPara.style.display = 'none';
+    cargo.innerHTML = etapa.titulo;
+    descricao.innerHTML = '';
+    aviso.style.display = 'none';
+    lateral.innerHTML = '';
+    numeros.innerHTML = numeroHtml;
 
 }
 
@@ -26,6 +38,3 @@ function corrige() {
 function confirma() {
     alert('Clicou em CONFIRMA');
 }
-
-//
-let etapaAtual = 0;
