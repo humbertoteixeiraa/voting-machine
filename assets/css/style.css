@@ -83,6 +83,11 @@ body {
     animation-iteration-count: infinite;
 }
 
+.aviso--grande {
+    font-size: 40px;
+    font-weight: bold;
+}
+
 .d-1-4 {
     flex: 1;
 
