@@ -1,2 +1,4 @@
 # urna-eletronica
- Projeto de uma Urna Eletrônica criado durante o curso de Javascript da B7Web.
+* Objective: work with request and API concepts with JavaScript.
+* Technologies used: HTML5, CSS3 and JavaScript.
+* Link: 
